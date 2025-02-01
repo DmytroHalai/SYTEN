@@ -20,8 +20,8 @@ export class User {
   @Column('text')
   phone: string;
 
-  // @Column('text')
-  // date_of_birth: string
+  @Column()
+  date_of_birth: Date;
 
   @Column('text')
   role: string;
