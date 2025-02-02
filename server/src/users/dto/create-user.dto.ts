@@ -30,5 +30,3 @@ export class CreateUserDto {
   @IsOptional()
   address?: string;
 }
-
-export class UpdateUserDto extends PartialType(CreateUserDto) {}

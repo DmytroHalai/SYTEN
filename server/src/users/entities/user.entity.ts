@@ -6,7 +6,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity()
+@Entity('users')
 export class User {
   @PrimaryGeneratedColumn('increment')
   user_id: number;
@@ -26,7 +26,7 @@ export class User {
   @Column('text')
   role: string;
 
-  @Column('text')
+  @Column('text', { default: 'penis' })
   address: string;
 
   @CreateDateColumn()
